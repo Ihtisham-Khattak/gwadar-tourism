@@ -6,17 +6,6 @@ import Video3 from './Components/General3.mp4';
 
 function App() {
 
-
-
-
-  const timerDate = () => {
-
-    const today = new Date();
-    const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
- 
-  }
-
-
   return (
     <div className="App">
 
