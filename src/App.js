@@ -1,26 +1,22 @@
-
-import './App.css';
-import DateTime from './Components/DateTime';
-import Video3 from './Components/General3.mp4';
-
+import "./App.css";
+import { Carousel } from "./components/Carousel";
+import { Destination } from "./components/Destination";
+import Footer from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { Navbar } from "./components/Navbar";
+import { Search } from "./components/Search";
+import { Selectes } from "./components/Selectes";
 
 function App() {
-
   return (
     <div className="App">
-
-    
-      
-      <div className='overlay'>    </div>      
-
-      <video src={Video3} autoPlay loop muted></video>
-      
-      <div className='content'>
-      <h1>“Where there’s tea there’s hope.” <br /> – Arthur Wing Pinero </h1>
-      <DateTime />
-      </div>
-
-
+      <Navbar />
+      <Hero />
+      <Destination />
+      <Search />
+      <Selectes />
+      <Carousel />
+      <Footer />
     </div>
   );
 }

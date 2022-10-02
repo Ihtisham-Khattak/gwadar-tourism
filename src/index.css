@@ -1,63 +1,53 @@
-*{
-  margin: 0;
-  padding: 0;
-font-family: 'Times New Roman', Times, serif;}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
 
-.App{
+:root {
 
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-video{
-
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.content{
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  color: rgba(255, 255, 255, 0.8);
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+    --primary-dark: #65A30D;
+    --primary-light: #22c4f9;
 }
 
 
-.contents{
+.icon {
 
-  position: absolute;
-  width: 100%;
-  /* height: 100%; */
-  /* align-items: center; */
-  top: 100px;
-  left: 0;
-  font-size: 4rem;
-  color: #fff;
-  /* justify-content: center; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  font-weight: bold;
+    color: var(--primary-dark);
 
 }
 
-.overlay{
+@layer base {
 
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    body {
+
+        @apply font-[Roboto]
+    }
+
+    li {
+        @apply p-3 text-white
+    }
+
+    h1 {
+        @apply text-3xl text-lime-600 font-bold md:text-4xl sm:text-4xl
+    }
+
+    h2 {
+        @apply text-3xl font-bold text-white p-4
+    }
+
+    h3 {
+        @apply text-xl font-bold
+    }
+
+    button {
+        @apply p-3 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] rounded-md text-white font-bold
+    }
+
+    .icon {
+
+        @apply cursor-pointer text-2xl
+    }
 }
