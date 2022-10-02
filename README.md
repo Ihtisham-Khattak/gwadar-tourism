@@ -16,5 +16,5 @@ You may also see any lint errors in the console.
 
 Using ReactJS, React-Icons, React Router Dom, and Tailwind Css. 
 
-###Tailwind CSS
+### `Tailwind CSS`
 https://tailwindcss.com/docs/guides/create-react-app guide you how to configure tailwind with ReactJS
